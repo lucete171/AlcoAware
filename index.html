@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/index.css">
+    <title>User Information</title>
+</head>
+<body>
+    <form id="userinfo-form" class="form">
+        <h2>User Information</h2>
+        <!--Name-->
+        <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+		<!--Age-->
+        <div class="age">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+		
+		<!--gender-->
+        <div class="gender">
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+        </div>
+
+		<!--Drinking Frequency-->
+        <div class="drinking-frequency">
+            <label for="drinking_frequency">Drinking Frequency</label>
+            <select id="drinking_frequency" name="drinking_frequency" required>
+                <option value="">Select one</option>
+                <option value="Once a month or less">Once a month or less</option>
+                <option value="2-3 times a month">2-3 times a month</option>
+                <option value="1-2 times a week">1-2 times a week</option>
+                <option value="3-4 times a week">3-4 times a week</option>
+                <option value="Almost every day">Almost every day</option>
+            </select>
+        </div>
+
+		<!--Residence-->
+        <div class="residence">
+            <label for="residence">Residence Area</label>
+            <input type="text" id="residence" name="residence" placeholder="**시 **구 **동" required>
+        </div>
+
+		<!--Drinking Place-->
+        <div class="drinking-place">
+            <label for="drinking_place">Preferred Drinking Area</label>
+            <select id="drinking_place" name="drinking_place" required>
+                <option value="">Select one</option>
+                <option value="Home">Home</option>
+                <option value="Other area">Other area</option>
+            </select>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
