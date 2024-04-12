@@ -1,0 +1,94 @@
+:root {
+    --green: #7ac142;
+    --gray: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    display: none;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 20px;
+    border-top: 5px solid var(--green);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-out;
+    transition-delay: 0.2s;
+}
+
+.form-container.active {
+    display: block;
+}
+
+.form {
+    background-color: white;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.form * {
+    margin-bottom: 10px;
+}
+
+.form h2 {
+    text-align: left;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.form input[type="submit"] { 
+    border: 2px solid var(--green);
+    background: var(--green);
+    border-radius: 25px;
+    padding: 3px 12px 5px 12px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: white;
+    color: var(--green);
+}
+
+#switch-to-signup,
+#switch-to-login {
+    border: none;
+    background: none;
+    color: var(--green);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#switch-to-signup:hover,
+#switch-to-login:hover {
+    text-decoration: underline;
+}

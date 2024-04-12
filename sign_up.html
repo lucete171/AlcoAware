@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Login / Sign Up</title>
+</head>
+<body>
+    <div id="login-container" class="form-container">
+
+		<!--Log In-->
+        <form id="login-form" class="form">
+            <h2>Login</h2>
+            <!-- ID -->
+            <div class="id">
+                <label for="login-id">ID</label>
+                <input type="text" id="login-id" name="login-id" required>
+            </div>
+            <!-- Password -->
+            <div class="pw">
+                <label for="login-pw">Password</label>
+                <input type="password" id="login-pw" name="login-pw" required>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <button id="switch-to-signup">Sign Up</button>
+    </div>
+
+	<!--Sign Up--> 
+    <div id="signup-container" class="form-container">
+        <form id="signup-form" class="form">
+            <h2>Sign Up</h2>
+            <!-- ID -->
+            <div class="id">
+                <label for="signup-id">ID</label>
+                <input type="text" id="signup-id" name="signup-id" required>
+            </div>
+            <!-- Password -->
+            <div class="pw">
+                <label for="signup-pw">Password</label>
+                <input type="password" id="signup-pw" name="signup-pw" required>
+            </div>
+            <!-- Confirm Password -->
+            <div class="confirm-pw">
+                <label for="confirm-pw">Confirm Password</label>
+                <input type="password" id="confirm-pw" name="confirm-pw" required>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <button id="switch-to-login">Login</button>
+    </div>
+
+    <script>
+        const loginContainer = document.getElementById('login-container');
+        const signupContainer = document.getElementById('signup-container');
+        const switchToSignupBtn = document.getElementById('switch-to-signup');
+        const switchToLoginBtn = document.getElementById('switch-to-login');
+
+        switchToSignupBtn.addEventListener('click', () => {
+            loginContainer.style.display = 'none';
+            signupContainer.style.display = 'block';
+        });
+
+        switchToLoginBtn.addEventListener('click', () => {
+            loginContainer.style.display = 'block';
+            signupContainer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
