@@ -20,7 +20,6 @@ body {
     transition: all 0.2s ease-out;
     transition-delay: 0.2s;
 }
-
 .form-container.active {
     display: block;
 }
@@ -29,6 +28,7 @@ body {
     background-color: white;
     color: var(--gray);
     font-size: 14px;
+	height: 100%;
 }
 
 .form * {
