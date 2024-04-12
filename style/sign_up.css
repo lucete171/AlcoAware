@@ -11,8 +11,8 @@ body {
 }
 
 .form-container {
-    display: none;
     max-width: 420px;
+	max-height: 600px; 
     margin: 60px auto;
     padding: 20px;
     border-top: 5px solid var(--green);
@@ -61,7 +61,13 @@ body {
     box-sizing: border-box;
 }
 
-.form input[type="submit"] { 
+.submit{
+	margin-top: 30px;
+	text-align: center;
+	letter-spacing: 20px;
+}
+
+.form input[type="submit"] {
     border: 2px solid var(--green);
     background: var(--green);
     border-radius: 25px;
@@ -76,19 +82,26 @@ body {
 
 .form input[type="submit"]:hover {
     background-color: white;
-    color: var(--green);
+    color: var(--green);	
+	transform: scale(120%);
 }
 
 #switch-to-signup,
 #switch-to-login {
-    border: none;
-    background: none;
+	border: 2px solid var(--green);
+    background: white;
+    border-radius: 25px;
+    padding: 3px 12px 5px 12px;
     color: var(--green);
-    cursor: pointer;
     font-size: 14px;
-}
+    font-weight: bold;
+    letter-spacing: 0px;
+    transition: all 0.1s ease-out;
+    cursor: pointer;}
 
 #switch-to-signup:hover,
 #switch-to-login:hover {
-    text-decoration: underline;
+    background-color: var(--green);
+	color: white;
+	transform: scale(120%);
 }

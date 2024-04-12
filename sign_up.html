@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="stylesheet" href="./style/sign_up.css">
     <title>Login / Sign Up</title>
 </head>
 <body>
+	<!--Log In-->
     <div id="login-container" class="form-container">
-
-		<!--Log In-->
         <form id="login-form" class="form">
             <h2>Login</h2>
             <!-- ID -->
@@ -22,11 +21,12 @@
                 <label for="login-pw">Password</label>
                 <input type="password" id="login-pw" name="login-pw" required>
             </div>
+
             <div class="submit">
+				<button id="switch-to-signup">Sign Up</button>
                 <input type="submit" value="Login">
             </div>
         </form>
-        <button id="switch-to-signup">Sign Up</button>
     </div>
 
 	<!--Sign Up--> 
@@ -48,28 +48,14 @@
                 <label for="confirm-pw">Confirm Password</label>
                 <input type="password" id="confirm-pw" name="confirm-pw" required>
             </div>
+			
             <div class="submit">
                 <input type="submit" value="Sign Up">
+				<button id="switch-to-login">Login</button>
             </div>
         </form>
-        <button id="switch-to-login">Login</button>
     </div>
 
-    <script>
-        const loginContainer = document.getElementById('login-container');
-        const signupContainer = document.getElementById('signup-container');
-        const switchToSignupBtn = document.getElementById('switch-to-signup');
-        const switchToLoginBtn = document.getElementById('switch-to-login');
-
-        switchToSignupBtn.addEventListener('click', () => {
-            loginContainer.style.display = 'none';
-            signupContainer.style.display = 'block';
-        });
-
-        switchToLoginBtn.addEventListener('click', () => {
-            loginContainer.style.display = 'block';
-            signupContainer.style.display = 'none';
-        });
-    </script>
+	<script src="js/sign_up.js"></script>
 </body>
 </html>
