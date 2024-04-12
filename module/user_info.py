@@ -34,7 +34,10 @@ def place_convert(str):
 
 # 프론트엔드에서 받은 정보를 딕셔너리 형태로 저장
 # 프론트엔드에서 받아온 정보를 저장해야 함
+user_id = random.randint(0, 100) # user_id는 sign up에서 사용한 id일 수도 있음(이후에 처리해줘야 함)
+
 user_info = {
+    "ID": user_id,
     "Age": random.randint(0, 100),
     "Gender": "female",  # 남자: 1, 여자: 0
     "Drinking-Frequency": "3-4 times a week", # 5가지 종류의 음주 빈도 유형
