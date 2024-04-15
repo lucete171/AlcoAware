@@ -14,17 +14,17 @@
             <!-- ID -->
             <div class="id">
                 <label for="login-id">ID</label>
-                <input type="text" id="login-id" name="login-id" required>
+                <input type="text" id="login-id" name="login-id" pattern="[A-Za-z0-9]*" title="Please enter only English and numbers" required>
             </div>
             <!-- Password -->
             <div class="pw">
                 <label for="login-pw">Password</label>
-                <input type="password" id="login-pw" name="login-pw" required>
+                <input type="password" id="login-pw" name="login-pw" pattern="[A-Za-z0-9!@#$%^&*()-_=+`~]*" required>
             </div>
 
             <div class="submit">
 				<button id="switch-to-signup">Sign Up</button>
-                <input type="submit" value="Login">
+                <input type="submit" value="Login" id="Login">
             </div>
         </form>
     </div>
@@ -36,21 +36,21 @@
             <!-- ID -->
             <div class="id">
                 <label for="signup-id">ID</label>
-                <input type="text" id="signup-id" name="signup-id" required>
+                <input type="text" id="signup-id" name="signup-id" pattern="[A-Za-z0-9]*" title="Please enter only English and numbers" required>
             </div>
             <!-- Password -->
             <div class="pw">
                 <label for="signup-pw">Password</label>
-                <input type="password" id="signup-pw" name="signup-pw" required>
+                <input type="password" id="signup-pw" name="signup-pw" pattern="[A-Za-z0-9!@#$%^&*()-_=+`~]*" required>
             </div>
             <!-- Confirm Password -->
             <div class="confirm-pw">
                 <label for="confirm-pw">Confirm Password</label>
-                <input type="password" id="confirm-pw" name="confirm-pw" required>
+                <input type="password" id="confirm-pw" name="confirm-pw" pattern="[A-Za-z0-9!@#$%^&*()-_=+`~]*" required>
             </div>
 			
             <div class="submit">
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Sign Up" id="signUp">
 				<button id="switch-to-login">Login</button>
             </div>
         </form>
