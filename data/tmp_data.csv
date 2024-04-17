@@ -1,0 +1,16 @@
+user_id,name,age,gender,drinking-frequency,residence,drinking-place,acceleration,ziroscope,location,timestamp,drunk
+1,tabi,16,male,3-4 times a week,a,Home,0.495919203,0.273110304,v,1288905894,0
+1,tabi,16,male,3-4 times a week,a,Home,0.812568207,0.054417066,a,662842676.3,1
+1,tabi,16,male,3-4 times a week,a,Home,0.279958356,0.121140507,c,1105892114,0
+1,tabi,16,male,3-4 times a week,a,Home,0.976044402,0.789256086,a,555955459.5,1
+1,tabi,16,male,3-4 times a week,a,Home,0.788182272,0.718714383,a,1635876319,1
+2,lize,24,female,1-2 times a week,b,Other area,0.010357482,0.002992825,a,863706897.2,0
+2,lize,24,female,1-2 times a week,b,Other area,0.054593535,0.669531873,a,1328735107,0
+2,lize,24,female,1-2 times a week,b,Other area,0.9743061,0.688886749,c,1108410953,1
+2,lize,24,female,1-2 times a week,b,Other area,0.597472596,0.620338399,k,269841954.1,1
+2,lize,24,female,1-2 times a week,b,Other area,0.507096826,0.637541019,e,297880364.8,1
+3,ganzi,32,male,Almost every day,c,Home,0.500466253,0.457765014,d,269841954.1,0
+3,ganzi,32,male,Almost every day,c,Home,0.491523772,0.812341758,c,513474094.1,1
+3,ganzi,32,male,Almost every day,c,Home,0.682581291,0.866918502,c,555955459.5,1
+3,ganzi,32,male,Almost every day,c,Home,0.773638811,0.921495246,c,598436824.9,1
+3,ganzi,32,male,Almost every day,c,Home,0.86469633,0.97607199,c,574755737.1,1
