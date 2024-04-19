@@ -49,6 +49,9 @@ features = list(corrDf.loc[(abs(corrDf.drunk) > stdCorr) &
            (abs(corrDf.drunk != 1))].index)
 label = ['drunk']
 
+# data shuffle
+data = data.sample(frac=1).reset_index(drop=True)
+
 stdR = 0.7 # standard Ratio
 stdIdx = int(data.shape[0]*stdR)
 
@@ -61,6 +64,9 @@ y_label = data.loc[stdIdx+1:, label]
 from sklearn import ensemble
 from sklearn.metrics import mean_squared_error as mse
 
+# fit 형식 변환
+x_label = x_label.values.ravel()
+
 # 모델 선언
 modelRf = ensemble.RandomForestRegressor(random_state = 10)
 fittedModelRf = modelRf.fit(x_features, x_label)
@@ -68,7 +74,10 @@ fittedModelRf = modelRf.fit(x_features, x_label)
 # 4. 예측
 predictRf = fittedModelRf.predict(y_features)
 y_label["RF_PREDICT"] = predictRf
+print(y_label)
+print("\n")
 
 rfmse= mse(y_label.drunk, y_label.RF_PREDICT)
+print(rfmse)
 
 # 데이터 정리
