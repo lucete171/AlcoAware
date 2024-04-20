@@ -14,40 +14,52 @@ fre_dict = {'Once a month or less':0.0333,
             '1-2 times a week':0.3000,
             '3-4 times a week':0.7000,
             'Almost every day':0.9333}
+drinking_map = {'Home':1,
+                'Other area':0}
+pref_list = ['a', 'b', 'd'] # 이후에 변경
 
-def preprocess(data):
-    data['AGE_RANGE'] = (data['age']//10) * 10
-    data["GENDER_N"] = data["gender"].map(gender_dict)
-    data["FREQUENCY_N"] = data["drinking-frequency"].map(fre_dict)
-    
-    # 자이로스코프 변화량
-    # 위치 변수 (선호 장소, 현재 위치, 주류 소비 장소 -> val)
-    add_timestamp_columns(data)
-    
-    # DAY_N 컬럼 생성(one-hot-encoding)
-    data = pd.get_dummies(data, columns=['day'])
-    # 이후 코드에 따라 수정할 필요가 있음
-    data = data.rename(columns={'day': 'DAY',
+data['AGE_RANGE'] = (data['age']//10) * 10
+data["GENDER_N"] = data["gender"].map(gender_dict)
+data["FREQUENCY_N"] = data["drinking-frequency"].map(fre_dict)
+data['DRINKING_H'] = data['drinking-place'].map(drinking_map)
+   
+# 자이로스코프 변화량
+add_timestamp_columns(data)
+data['CUR_LOC'] = (data['residence'] == data['location']).astype(int)
+data['CUR_ENT'] = data['location'].isin(pref_list).astype(int)
+data = pd.get_dummies(data, columns=['day'], prefix='day') # DAY_N 컬럼 생성(one-hot-encoding)
+
+# data columns 이름 변경
+data = data.rename(columns={'day': 'DAY',
                             'time':'TIME',
                             'acceleration':'ACCELERATION',
                             'ziroscope':'ZIROSCOPE',
                             'drunk':'DRUNK'})
-    print(data.columns) # 이후 삭제
-    print('\n')
 
-preprocess(data)
-print(data) # 이후 삭제
-print('\n')
 
 # 2. 특성 선정, 데이터 분리
-corrDf = data.corr(numeric_only = True) # 숫자 데이터만 취급
-corrDf = corrDf.drop(['user_id', 'age', 'timestamp'], axis = 1)
+# corrDf = data.corr(numeric_only = True) # 숫자 데이터만 취급
+# corrDf = corrDf.drop(['user_id', 'age', 'timestamp'], axis = 1)
+# stdCorr = 0.5
 
-stdCorr = 0.5
+
 # 여기서 DRUNK로 바꿨는데도 drunk 써야만 error가 발생하지 않음 why?
-features = list(corrDf.loc[(abs(corrDf.drunk) > stdCorr) &
-           (abs(corrDf.drunk != 1))].index)
-label = ['drunk']
+# features = list(corrDf.loc[(abs(corrDf.drunk) > stdCorr) & (abs(corrDf.drunk != 1))].index)
+
+# 이후에 day 관련 data 추가 여부 봐줘야함
+features = ['AGE_RANGE',
+            'GENDER_N',
+            'FREQUENCY_N',
+            'ACCELERATION',
+            'ZIROSCOPE',
+            'DRINKING_H',
+            'CUR_LOC',
+            'CUR_ENT',
+            'TIME',
+            'day_Thursday',
+            'day_Friday',
+            'day_Saturday']
+label = ['DRUNK']
 
 # data shuffle
 data = data.sample(frac=1).reset_index(drop=True)
@@ -77,7 +89,7 @@ y_label["RF_PREDICT"] = predictRf
 print(y_label)
 print("\n")
 
-rfmse= mse(y_label.drunk, y_label.RF_PREDICT)
+rfmse= mse(y_label.DRUNK, y_label.RF_PREDICT)
 print(rfmse)
 
 # 데이터 정리
