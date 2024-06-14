@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="drink_frequency_options">
+        <item>Less than once a month</item>
+        <item>2-3 times a month</item>
+        <item>1-2 times a week</item>
+        <item>3-4 times a week</item>
+        <item>Almost daily</item>
+    </string-array>
+    <string-array name="drink_location_options">
+        <item>Home</item>
+        <item>Other places</item>
+    </string-array>
+</resources>
