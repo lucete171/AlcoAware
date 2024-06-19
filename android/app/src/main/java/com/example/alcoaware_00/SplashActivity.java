@@ -11,11 +11,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TextView textView = new TextView(this);
-        textView.setText("AlcoAware");
-        textView.setTextSize(30);
-        textView.setGravity(Gravity.CENTER);
-        setContentView(textView);
+        setContentView(R.layout.activity_splash);
 
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
