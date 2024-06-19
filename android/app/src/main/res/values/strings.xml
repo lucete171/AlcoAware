@@ -9,7 +9,8 @@
 
     <!--SignUp-->
     <string name="recommend_login">Already have an account? Login here</string>
-
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_pw">Confirm Password</string>
 
     <!--main-->
     <string name="previous">Previous Month</string>
