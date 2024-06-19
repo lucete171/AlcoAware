@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.AdapterView;
 import android.widget.Toast;
-import android.graphics.Color;
 
 public class UserInfoActivity extends AppCompatActivity {
     private EditText nameEditText, ageEditText, regionEditText;
@@ -31,9 +30,30 @@ public class UserInfoActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.submit_button);
 
         // Setting up adapters
-        setupSpinner(genderSpinner, R.array.gender_options);
-        setupSpinner(drinkFrequencySpinner, R.array.drink_frequency_options);
-        setupSpinner(drinkLocationSpinner, R.array.drink_location_options);
+        ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this,
+                R.array.gender_options, android.R.layout.simple_spinner_item);
+        genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        genderSpinner.setAdapter(genderAdapter);
+
+        ArrayAdapter<CharSequence> frequencyAdapter = ArrayAdapter.createFromResource(this,
+                R.array.drink_frequency_options, android.R.layout.simple_spinner_item);
+        frequencyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        drinkFrequencySpinner.setAdapter(frequencyAdapter);
+
+        ArrayAdapter<CharSequence> locationAdapter = ArrayAdapter.createFromResource(this,
+                R.array.drink_location_options, android.R.layout.simple_spinner_item);
+        locationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        drinkLocationSpinner.setAdapter(locationAdapter);
+
+        // Set initial selection to the first item (placeholder)
+        setSpinnerToPlaceholder(genderSpinner);
+        setSpinnerToPlaceholder(drinkFrequencySpinner);
+        setSpinnerToPlaceholder(drinkLocationSpinner);
+
+        // Prevent selection of the first item
+        setSpinnerDefaultColor(genderSpinner);
+        setSpinnerDefaultColor(drinkFrequencySpinner);
+        setSpinnerDefaultColor(drinkLocationSpinner);
 
         submitButton.setOnClickListener(v -> {
             // 사용자 정보 저장 로직
@@ -45,39 +65,16 @@ public class UserInfoActivity extends AppCompatActivity {
         });
     }
 
-    private void setupSpinner(Spinner spinner, int arrayResId) {
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                arrayResId, android.R.layout.simple_spinner_item) {
-            @Override
-            public boolean isEnabled(int position) {
-                // 첫 번째 항목 (placeholder)은 선택 불가
-                return position != 0;
-            }
+    private void setSpinnerToPlaceholder(Spinner spinner) {
+        spinner.setSelection(0); // 첫 번째 항목 선택
+    }
 
-            @Override
-            public View getDropDownView(int position, View convertView, ViewGroup parent) {
-                View view = super.getDropDownView(position, convertView, parent);
-                TextView tv = (TextView) view;
-                if (position == 0) {
-                    // Placeholder의 텍스트 색상 변경
-                    tv.setTextColor(Color.GRAY);
-                } else {
-                    tv.setTextColor(Color.BLACK);
-                }
-                return view;
-            }
-        };
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
+    private void setSpinnerDefaultColor(Spinner spinner) {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
                     ((TextView) parent.getChildAt(0)).setTextColor(getResources().getColor(android.R.color.darker_gray));
-                } else {
-                    ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
                 }
             }
 
@@ -85,8 +82,6 @@ public class UserInfoActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-
-        // Set initial selection to the first item (placeholder)
-        spinner.setSelection(0);
     }
 }
+

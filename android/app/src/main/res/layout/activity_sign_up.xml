@@ -73,7 +73,7 @@
 
     <TextView
         android:id="@+id/textViewLogin"
-        android:text="Already have an account? Login here"
+        android:text="@string/recommend_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/sign_up_button"
