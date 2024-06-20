@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:text="Welcome to AlcoAware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="80dp"
+        android:background="@layout/edittext_rounded"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="16dp"
+        android:background="@layout/edittext_rounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/button_Login"
+        android:text="Login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:background="@layout/rounded_button"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/text_signup"
+        android:text="Don't have an account? Register now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:clickable="true"
+        android:onClick="onRegisterClicked"/>
+
+
+</RelativeLayout>
