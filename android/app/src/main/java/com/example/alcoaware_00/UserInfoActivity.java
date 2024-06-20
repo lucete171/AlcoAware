@@ -1,14 +1,16 @@
 package com.example.alcoaware_00;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class UserInfoActivity extends AppCompatActivity {
@@ -56,17 +58,39 @@ public class UserInfoActivity extends AppCompatActivity {
         setSpinnerDefaultColor(drinkLocationSpinner);
 
         submitButton.setOnClickListener(v -> {
-            // 사용자 정보 저장 로직
-            if (genderSpinner.getSelectedItemPosition() == 0 || drinkFrequencySpinner.getSelectedItemPosition() == 0 || drinkLocationSpinner.getSelectedItemPosition() == 0) {
-                Toast.makeText(UserInfoActivity.this, "Please select all fields", Toast.LENGTH_SHORT).show();
+            // Validate user input
+            if (!validateInput()) {
                 return;
             }
-            // 다른 유효성 검사 및 데이터 저장 로직
+
+            // Save user data (dummy logic)
+
+            // Proceed to main activity
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         });
     }
 
+    private boolean validateInput() {
+        if (isEmpty(nameEditText) || isEmpty(ageEditText) || isEmpty(regionEditText)) {
+            Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        if (genderSpinner.getSelectedItemPosition() == 0 || drinkFrequencySpinner.getSelectedItemPosition() == 0 || drinkLocationSpinner.getSelectedItemPosition() == 0) {
+            Toast.makeText(this, "Please select all fields", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean isEmpty(EditText editText) {
+        return editText.getText().toString().trim().isEmpty();
+    }
+
     private void setSpinnerToPlaceholder(Spinner spinner) {
-        spinner.setSelection(0); // 첫 번째 항목 선택
+        spinner.setSelection(0); // Select the first item
     }
 
     private void setSpinnerDefaultColor(Spinner spinner) {
@@ -74,7 +98,10 @@ public class UserInfoActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
-                    ((TextView) parent.getChildAt(0)).setTextColor(getResources().getColor(android.R.color.darker_gray));
+                    TextView textView = (TextView) view;
+                    if (textView != null) {
+                        textView.setTextColor(getResources().getColor(android.R.color.darker_gray));
+                    }
                 }
             }
 
@@ -84,4 +111,3 @@ public class UserInfoActivity extends AppCompatActivity {
         });
     }
 }
-

@@ -34,12 +34,12 @@ public class SignUpActivity extends AppCompatActivity {
 
             if(email.equals(admin_e)){
                 if(password.equals(confirmPassword)){
-                    Intent intent = new Intent(this, MainActivity.class);
+                    Intent intent = new Intent(this, UserInfoActivity.class);
                     startActivity(intent);
                     // 계정 정보 등록하기
                 }
                 else{
-                    Toast.makeText(this, "The password for verification does not match the password you entered.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "The password for verification does not match the password.", Toast.LENGTH_SHORT).show();
                 }
             }
             else {
