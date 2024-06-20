@@ -28,7 +28,7 @@
     <string name="user_info_text">User Information</string>
     <string name="name">Name</string>
     <string name="age">Age</string>
-    <string name="region">Region</string>
+    <string name="region_hint">Region(**시 **구 **동)</string>
     <string name="submit_text">Submit</string>
 
 </resources>
