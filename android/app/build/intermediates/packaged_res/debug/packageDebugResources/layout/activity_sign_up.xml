@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/appTitle"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -19,7 +19,7 @@
 
     <EditText
         android:id="@+id/email"
-        android:hint="Email"
+        android:hint="@string/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
@@ -33,7 +33,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:hint="Password"
+        android:hint="@string/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -46,7 +46,7 @@
 
     <EditText
         android:id="@+id/confirm_password"
-        android:hint="Confirm Password"
+        android:hint="@string/confirm_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -59,7 +59,7 @@
 
     <Button
         android:id="@+id/sign_up_button"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_below="@id/confirm_password"
@@ -73,12 +73,13 @@
 
     <TextView
         android:id="@+id/textViewLogin"
-        android:text="Already have an account? Login here"
+        android:text="@string/recommend_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/sign_up_button"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:onClick="onLoginClicked"/>
 
 </RelativeLayout>

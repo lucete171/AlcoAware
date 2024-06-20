@@ -4,32 +4,11 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <!-- 이전 달로 이동하는 버튼 -->
-    <Button
-        android:id="@+id/btn_prev_month"
-        android:text="@string/previous"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"/>
-
-    <!-- 다음 달로 이동하는 버튼 -->
-    <Button
-        android:id="@+id/btn_next_month"
-        android:text="@string/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"/>
-
     <!-- 캘린더뷰 -->
     <CalendarView
         android:id="@+id/calendar_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_prev_month"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"/>

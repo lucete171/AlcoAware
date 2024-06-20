@@ -1,6 +1,7 @@
 package com.example.alcoaware_00;
 
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -29,6 +30,8 @@ public class RecordActivity extends AppCompatActivity {
 
     private float[] accelerometerData = new float[3];
     private float[] gyroscopeData = new float[3];
+
+    private Button mainPageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +74,14 @@ public class RecordActivity extends AppCompatActivity {
             } else {
                 startRecording();
             }
+        });
+
+
+        mainPageButton = findViewById(R.id.main_page_button);
+
+        mainPageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         });
     }
 

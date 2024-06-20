@@ -79,6 +79,7 @@
         android:layout_below="@id/sign_up_button"
         android:layout_centerHorizontal="true"
         android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:onClick="onLoginClicked"/>
 
 </RelativeLayout>

@@ -20,6 +20,10 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\drawable_splash_img.png.flat",
+        "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\drawable\\splash_img.png"
+    },
+    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.alcoaware_00.app-debug-50:/layout_activity_main.xml.flat",
+        "source": "com.example.alcoaware_00.app-main-52:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -60,10 +68,6 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\layout\\activity_record.xml"
     },
     {
-        "merged": "com.example.alcoaware_00.app-debug-50:/drawable_ic_launcher.png.flat",
-        "source": "com.example.alcoaware_00.app-main-52:/drawable/ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\layout_activity_user_info.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\layout\\activity_user_info.xml"
     },
@@ -84,12 +88,20 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\layout\\activity_splash.xml"
+    },
+    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\drawable_ic_launcher.png.flat",
+        "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-52:\\drawable\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-50:\\drawable_ic_launcher_foreground.xml.flat",

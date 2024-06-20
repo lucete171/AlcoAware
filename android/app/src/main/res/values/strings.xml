@@ -5,7 +5,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="register_question">Don't have an account? Register now!</string>
+    <string name="register_question">Don\'t have an account? Register now!</string>
 
     <!--SignUp-->
     <string name="recommend_login">Already have an account? Login here</string>
@@ -22,6 +22,7 @@
     <string name="btn_start_text">Start</string>
     <string name="status_off">Status: Not Recording</string>
     <string name="status_on">Status: Recording</string>
+    <string name="main_page">Main Page</string>
 
     <!--user info-->
     <string name="user_info_text">User Information</string>

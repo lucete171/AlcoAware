@@ -4,38 +4,49 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_horizontal"
     android:background="@android:color/white">
 
     <TextView
-        android:text="AlcoAware"
+        android:text="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
         android:textColor="@android:color/holo_green_light"/>
 
     <Button
         android:id="@+id/record_button"
-        android:text="Start"
+        android:text="@string/btn_start_text"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerInParent="true"
         android:background="@layout/rounded_button"
         android:textSize="70sp"
-        android:textColor="@android:color/holo_green_light"
-        android:gravity="center"/>
+        android:textColor="@android:color/holo_green_light"/>
 
     <TextView
         android:id="@+id/status_text"
-        android:text="Status: Not Recording"
+        android:text="@string/status_off"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/record_button"
         android:layout_marginTop="30dp"
         android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/main_page_button"
+        android:text="@string/main_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@layout/rounded_button"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_margin="16dp"
+        android:padding="12dp"/>
+
 </RelativeLayout>
