@@ -1,4 +1,3 @@
-![ic_launcher](https://github.com/lucete171/AlcoAware/assets/80573129/3fabecac-b32f-416d-bab5-a985beb54173)
 # AlcoAware
 AI system to determine whether to drink alcohol through user behavior analysis
 
