@@ -3020,6 +3020,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_eye
 drawable ic_keyboard_black_24dp
 drawable ic_launcher
 drawable ic_launcher_background
@@ -3251,6 +3252,8 @@ id compose_view_saveable_id_tag
 id compress
 id confirm_button
 id confirm_password
+id confirm_password_toggle
+id confirm_pwd_section
 id constraint
 id consume_window_insets_tag
 id container
@@ -3380,7 +3383,6 @@ id line3
 id linear
 id listMode
 id list_item
-id login_button
 id m3_side_sheet
 id main
 id main_page_button
@@ -3501,6 +3503,7 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id pwd_section
 id radio
 id ratio
 id record_button
@@ -3890,6 +3893,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string age
+string age_ex
 string android_credentials_TYPE_PASSWORD_CREDENTIAL
 string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
@@ -4099,8 +4103,8 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string name
+string name_ex
 string navigation_menu
-string next
 string not_selected
 string off
 string on
@@ -4110,11 +4114,11 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string previous
 string project_id
 string range_end
 string range_start
 string record_btn_text
+string region_ex
 string region_hint
 string search_bar_search
 string search_menu_title

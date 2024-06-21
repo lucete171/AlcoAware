@@ -79,12 +79,18 @@ public class UserInfoActivity extends AppCompatActivity {
 
     private boolean validateInput() {
         if (isEmpty(nameEditText) || isEmpty(ageEditText) || isEmpty(regionEditText)) {
-            Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "모든 질문에 응답하지 않았습니다.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
         if (genderSpinner.getSelectedItemPosition() == 0 || drinkFrequencySpinner.getSelectedItemPosition() == 0 || drinkLocationSpinner.getSelectedItemPosition() == 0) {
-            Toast.makeText(this, "Please select all fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "모든 질문에 응답하지 않았습니다.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        String region = regionEditText.getText().toString().trim();
+        if (!isValidRegionFormat(region)) {
+            Toast.makeText(this, "올바른 지역 형식을 입력해 주세요.", Toast.LENGTH_SHORT).show();
             return false;
         }
 
@@ -97,6 +103,12 @@ public class UserInfoActivity extends AppCompatActivity {
 
     private void setSpinnerToPlaceholder(Spinner spinner) {
         spinner.setSelection(0); // Select the first item
+    }
+
+    private boolean isValidRegionFormat(String region) {
+        // Using a regex pattern for validation
+        String regex = "^[가-힣]+시\\s[가-힣]+구\\s[가-힣0-9]+(동|가)$";
+        return region.matches(regex);
     }
 
     private void setSpinnerDefaultColor(Spinner spinner) {

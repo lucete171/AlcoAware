@@ -24,6 +24,11 @@
             android:layout_marginTop="60dp"
             android:layout_marginBottom="40dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name_ex"/>
+
         <EditText
             android:id="@+id/name"
             android:hint="@string/name"
@@ -34,6 +39,11 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/age_ex"/>
 
         <EditText
             android:id="@+id/age"
@@ -66,6 +76,11 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/region_ex"/>
 
         <EditText
             android:id="@+id/region"

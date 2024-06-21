@@ -2,32 +2,33 @@
     <string name="app_name">AlcoAware</string>
     <!--Login-->
     <string name="welcome_message">Welcome to AlcoAware!</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="sign_up_prompt">이미 계정이 있나요?&#10; 회원가입을 위해 Sign Up 버튼을 클릭하세요</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="sign_up_prompt">아직 계정이 없나요?&#10; 회원가입을 위해 버튼을 클릭하세요</string>
 
     <!--SignUp-->
-    <string name="sign_up">Sign Up</string>
-    <string name="confirm_pw">Confirm Password</string>
+    <string name="sign_up">회원가입</string>
+    <string name="confirm_pw">비밀번호 확인</string>
+
+    <!--user info-->
+    <string name="user_info_text">사용자 정보</string>
+    <string name="name">이름</string>
+    <string name="name_ex">예) 홍길동(영어도 입력 가능)</string>
+    <string name="age">나이</string>
+    <string name="age_ex">예) 27(숫자만 입력해주세요)</string>
+    <string name="region_hint">거주 지역(~시 ~구 ~동/가)</string>
+    <string name="region_ex">예) 서울특별시 양천구 목4동</string>
+    <string name="submit_text">제출</string>
 
     <!--main-->
-    <string name="previous">Previous Month</string>
-    <string name="next">Next Month</string>
-    <string name="selected_date">Selected Date</string>
-    <string name="record_btn_text">Record Page</string>
+    <string name="selected_date">선택한 날짜</string>
+    <string name="record_btn_text">기록 페이지 이동</string>
 
     <!--record-->
     <string name="btn_start_text">Start</string>
-    <string name="status_off">Status: Not Recording</string>
-    <string name="status_on">Status: Recording</string>
-    <string name="main_page">Main Page</string>
-
-    <!--user info-->
-    <string name="user_info_text">User Information</string>
-    <string name="name">Name</string>
-    <string name="age">Age</string>
-    <string name="region_hint">Region(**시 **구 **동)</string>
-    <string name="submit_text">Submit</string>
+    <string name="status_off">기록되고 있지 않습니다.</string>
+    <string name="status_on">기록중</string>
+    <string name="main_page">메인 화면</string>
 
 </resources>

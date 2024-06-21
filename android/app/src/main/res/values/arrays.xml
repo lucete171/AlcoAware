@@ -1,22 +1,23 @@
 <resources>
     <string-array name="gender_options">
-        <item>Gender</item>
-        <item>Male</item>
-        <item>Female</item>
+        <item>성별</item>
+        <item>남자</item>
+        <item>여자</item>
     </string-array>
 
     <string-array name="drink_frequency_options">
-        <item>Drinking Frequency</item>
-        <item>Less than once a month</item>
-        <item>2-3 times a month</item>
-        <item>1-2 times a week</item>
-        <item>3-4 times a week</item>
-        <item>Almost daily</item>
+        <item>음주 빈도(한 달 기준)</item>
+        <item>1회 이하</item>
+        <item>2-3 회</item>
+        <item>1-2 회</item>
+        <item>3-4 회</item>
+        <item>거의 매일</item>
     </string-array>
 
     <string-array name="drink_location_options">
-        <item>Drink Location</item>
-        <item>Home</item>
-        <item>Other places</item>
+        <item>음주 선호 장소(자주 술 마시는 곳)</item>
+        <item>거주지 반경 300m 이내(거주지 포함)</item>
+        <item>거주지 반경 300m 초과 1km 이내</item>
+        <item>거주지 반경 1km 초과</item>
     </string-array>
 </resources>

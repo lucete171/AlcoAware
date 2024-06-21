@@ -4,10 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
-import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,9 +23,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity extends AppCompatActivity {
     private EditText emailEditText, passwordEditText, confirmPasswordEditText;
-    private Button signUpButton, loginButton;
+    private ImageButton passwordToggle, confirmPasswordToggle;
+    private Button signUpButton;
     private FirebaseAuth mFirebaseAuth; // 파이어 베이스 인증
     private DatabaseReference mDatabaseRef; // 실시간 데이터 베이스
+
+    private boolean isPasswordVisible = false;
+    private boolean isConfirmPasswordVisible = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +43,36 @@ public class SignUpActivity extends AppCompatActivity {
         passwordEditText = findViewById(R.id.password);
         confirmPasswordEditText = findViewById(R.id.confirm_password);
         signUpButton = findViewById(R.id.sign_up_button);
-        loginButton = findViewById(R.id.login_button);
+        passwordToggle = findViewById(R.id.password_toggle);
+        confirmPasswordToggle = findViewById(R.id.confirm_password_toggle);
+
+        passwordToggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isPasswordVisible) {
+                    passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    passwordToggle.setImageResource(R.drawable.ic_eye);
+                } else {
+                    passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }
+                passwordEditText.setSelection(passwordEditText.getText().length());
+                isPasswordVisible = !isPasswordVisible;
+            }
+        });
+
+        confirmPasswordToggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isConfirmPasswordVisible) {
+                    confirmPasswordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    confirmPasswordToggle.setImageResource(R.drawable.ic_eye);
+                } else {
+                    confirmPasswordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }
+                confirmPasswordEditText.setSelection(confirmPasswordEditText.getText().length());
+                isConfirmPasswordVisible = !isConfirmPasswordVisible;
+            }
+        });
 
         signUpButton.setOnClickListener(v -> {
             String email = emailEditText.getText().toString();
@@ -74,12 +110,5 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             });
         });
-
-        loginButton.setOnClickListener(v -> {
-            Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
-            startActivity(intent);
-        });
     }
-    }
-
-
+}

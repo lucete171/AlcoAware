@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(LoginActivity.this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "잘못된 이메일 주소와 비밀번호를 입력하셨습니다", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
