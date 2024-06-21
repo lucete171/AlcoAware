@@ -13,6 +13,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class UserInfoActivity extends AppCompatActivity {
     private EditText nameEditText, ageEditText, regionEditText;
     private Spinner genderSpinner, drinkFrequencySpinner, drinkLocationSpinner;
@@ -63,7 +68,8 @@ public class UserInfoActivity extends AppCompatActivity {
                 return;
             }
 
-            // Save user data (dummy logic)
+            // Save user data to Firebase Database
+            saveUserDataToDatabase();
 
             // Proceed to main activity
             Intent intent = new Intent(this, MainActivity.class);
@@ -109,5 +115,36 @@ public class UserInfoActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+    }
+
+    private void saveUserDataToDatabase() {
+        // Get user input
+        String name = nameEditText.getText().toString().trim();
+        int age = Integer.parseInt(ageEditText.getText().toString().trim());
+        String region = regionEditText.getText().toString().trim();
+        String gender = genderSpinner.getSelectedItem().toString();
+        String drinkFrequency = drinkFrequencySpinner.getSelectedItem().toString();
+        String drinkLocation = drinkLocationSpinner.getSelectedItem().toString();
+
+        // Create UserInfo object
+        UserInfo userInfo = new UserInfo(name, age, region, gender, drinkFrequency, drinkLocation);
+
+        // Firebase Database reference
+        DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (currentUser != null) {
+            // Save to 'users' node under current user's UID
+            databaseRef.child("users").child(currentUser.getUid()).setValue(userInfo)
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(this, "사용자 정보 저장 실패: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    });
+        }
     }
 }
