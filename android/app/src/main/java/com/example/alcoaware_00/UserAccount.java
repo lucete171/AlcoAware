@@ -18,7 +18,7 @@ public class UserAccount {
     public String idToken;
 
     public String getEmailId() {return emailId;}
-    public void setEmailId(String idToken){
+    public void setEmailId(String emailId){
         this.emailId = emailId;
     }
     public String emailId;
