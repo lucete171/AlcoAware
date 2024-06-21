@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-48:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-64:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\261e8467ec09ba3cb89025530b3556d5\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\481ba7378ac34359224eef46c2588847\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

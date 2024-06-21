@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "529199863352",
+    "project_id": "alcoaware-cfbcb",
+    "storage_bucket": "alcoaware-cfbcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529199863352:android:d82b746ff5128bb88b38cd",
+        "android_client_info": {
+          "package_name": "com.example.alcoaware_00"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_zsRQ2gG0U9zdgJS_9caZFf9ckAhKCRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

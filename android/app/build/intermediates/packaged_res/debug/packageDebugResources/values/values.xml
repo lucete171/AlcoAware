@@ -33,18 +33,24 @@
     <string name="btn_start_text">Start</string>
     <string name="confirm_pw">Confirm Password</string>
     <string name="email">Email</string>
+    <string name="gcm_defaultSenderId" translatable="false">529199863352</string>
+    <string name="google_api_key" translatable="false">AIzaSyA_zsRQ2gG0U9zdgJS_9caZFf9ckAhKCRE</string>
+    <string name="google_app_id" translatable="false">1:529199863352:android:d82b746ff5128bb88b38cd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_zsRQ2gG0U9zdgJS_9caZFf9ckAhKCRE</string>
+    <string name="google_storage_bucket" translatable="false">alcoaware-cfbcb.appspot.com</string>
     <string name="login">Login</string>
     <string name="main_page">Main Page</string>
     <string name="name">Name</string>
     <string name="next">Next Month</string>
     <string name="password">Password</string>
     <string name="previous">Previous Month</string>
-    <string name="recommend_login">Already have an account? Login here</string>
+    <string name="project_id" translatable="false">alcoaware-cfbcb</string>
     <string name="record_btn_text">Record Page</string>
-    <string name="region">Region</string>
-    <string name="register_question">Don\'t have an account? Register now!</string>
+    <string name="region_hint">Region(**시 **구 **동)</string>
     <string name="selected_date">Selected Date</string>
     <string name="sign_up">Sign Up</string>
+    <string name="sign_up_prompt">이미 계정이 있나요?
+ 회원가입을 위해 Sign Up 버튼을 클릭하세요</string>
     <string name="status_off">Status: Not Recording</string>
     <string name="status_on">Status: Recording</string>
     <string name="submit_text">Submit</string>
