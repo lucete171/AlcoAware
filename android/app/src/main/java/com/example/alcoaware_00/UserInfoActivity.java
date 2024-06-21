@@ -127,7 +127,7 @@ public class UserInfoActivity extends AppCompatActivity {
         String drinkLocation = drinkLocationSpinner.getSelectedItem().toString();
 
         // Create UserInfo object
-        UserInfo userInfo = new UserInfo(name, age, region, gender, drinkFrequency, drinkLocation);
+        UserAccount userInfo = new UserAccount(name, age, region, gender, drinkFrequency, drinkLocation);
 
         // Firebase Database reference
         DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
