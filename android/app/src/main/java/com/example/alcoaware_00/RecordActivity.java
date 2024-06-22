@@ -96,7 +96,7 @@ public class RecordActivity extends AppCompatActivity {
 
     private void stopRecording() {
         isRecording = false;
-        statusTextView.setText("기록되고 있지 않습니다.");
+        statusTextView.setText("기록되고 있지 않습니다");
         recordButton.setText("Start");
         sensorManager.unregisterListener(sensorEventListener);
         handler.removeCallbacks(recordTask);

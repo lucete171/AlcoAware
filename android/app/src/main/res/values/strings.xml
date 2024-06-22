@@ -14,11 +14,11 @@
     <!--user info-->
     <string name="user_info_text">사용자 정보</string>
     <string name="name">이름</string>
-    <string name="name_ex">예) 홍길동(영어도 입력 가능)</string>
-    <string name="age">나이</string>
-    <string name="age_ex">예) 27(숫자만 입력해주세요)</string>
-    <string name="region_hint">거주 지역(~시 ~구 ~동/가)</string>
-    <string name="region_ex">예) 서울특별시 양천구 목4동</string>
+    <string name="name_ex">예) 홍길동</string>
+    <string name="age">출생년도</string>
+    <string name="age_ex">예) 1998</string>
+    <string name="region_hint">거주 지역</string>
+    <string name="region_ex">예) 서울특별시 양천구 목4동(~시 ~구 ~동/가)</string>
     <string name="submit_text">제출</string>
 
     <!--main-->
@@ -27,7 +27,7 @@
 
     <!--record-->
     <string name="btn_start_text">Start</string>
-    <string name="status_off">기록되고 있지 않습니다.</string>
+    <string name="status_off">기록되고 있지 않습니다</string>
     <string name="status_on">기록중</string>
     <string name="main_page">메인 화면</string>
 

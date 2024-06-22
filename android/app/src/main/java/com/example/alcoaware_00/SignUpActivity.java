@@ -80,6 +80,13 @@ public class SignUpActivity extends AppCompatActivity {
             String confirmPassword = confirmPasswordEditText.getText().toString();
 
             // 회원가입 검증 로직 _ Firebase Auth
+                // 이메일 형식 확인을 위한 정규 표현식
+            String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+            if (!email.matches(emailPattern)) {
+                Toast.makeText(getApplicationContext(), "이메일 형식이 올바르지 않습니다!", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if (password.length() < 6) {
                 Toast.makeText(getApplicationContext(), "패스워드가 너무 짧습니다. 6글자 이상의 비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
                 return;

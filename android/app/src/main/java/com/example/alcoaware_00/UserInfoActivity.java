@@ -94,6 +94,20 @@ public class UserInfoActivity extends AppCompatActivity {
             return false;
         }
 
+        String ageStr = ageEditText.getText().toString().trim();
+        int age;
+        try {
+            age = Integer.parseInt(ageStr);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "올바른 출생년도 형식을 입력해 주세요.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
+        if (!isValidAge(age)) {
+            Toast.makeText(this, "올바른 출생년도 형식을 입력해 주세요.", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         return true;
     }
 
@@ -105,11 +119,17 @@ public class UserInfoActivity extends AppCompatActivity {
         spinner.setSelection(0); // Select the first item
     }
 
+    private boolean isValidAge(int year) {
+        // 출생년도가 4자리 숫자인지 확인
+        return (year >= 1000 && year <= 9999);
+    }
+
     private boolean isValidRegionFormat(String region) {
         // Using a regex pattern for validation
         String regex = "^[가-힣]+시\\s[가-힣]+구\\s[가-힣0-9]+(동|가)$";
         return region.matches(regex);
     }
+
 
     private void setSpinnerDefaultColor(Spinner spinner) {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
