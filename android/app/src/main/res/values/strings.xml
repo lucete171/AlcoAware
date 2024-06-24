@@ -26,6 +26,7 @@
 
     <!--record-->
     <string name="btn_start_text">Start</string>
+    <string name="btn_stop_text">Stop</string>
     <string name="status_off">기록되고 있지 않습니다</string>
     <string name="status_on">기록중</string>
     <string name="main_page">메인 화면</string>

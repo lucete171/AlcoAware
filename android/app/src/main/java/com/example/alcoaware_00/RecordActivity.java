@@ -1,113 +1,89 @@
 package com.example.alcoaware_00;
 
-import android.content.Context;
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 public class RecordActivity extends AppCompatActivity {
-    private TextView statusTextView;
+
+    private ToggleButton toggleButton;
+    private TextView drinkingText;
+    private Button recordButton;
+    private TextView statusText;
     private boolean isRecording = false;
-    private Handler handler = new Handler();
-    private Runnable recordTask;
-
-    private SensorManager sensorManager;
-    private Sensor accelerometer, gyroscope;
-    private SensorEventListener sensorEventListener;
-
-    private float[] accelerometerData = new float[3];
-    private float[] gyroscopeData = new float[3];
-
-    private Button mainPageButton;
+    private Intent serviceIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
 
-        statusTextView = findViewById(R.id.status_text);
-        ToggleButton recordToggle = findViewById(R.id.toggle_button);
+        toggleButton = findViewById(R.id.toggle_button);
+        drinkingText = findViewById(R.id.drinking_text);
+        recordButton = findViewById(R.id.record_button);
+        statusText = findViewById(R.id.status_text);
 
-        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        gyroscope = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
-
-        sensorEventListener = new SensorEventListener() {
+        // 토글 버튼 상태 변경 리스너
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onSensorChanged(SensorEvent event) {
-                if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-                    System.arraycopy(event.values, 0, accelerometerData, 0, event.values.length);
-                } else if (event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-                    System.arraycopy(event.values, 0, gyroscopeData, 0, event.values.length);
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    drinkingText.setText(R.string.drinking_on);
+                } else {
+                    drinkingText.setText(R.string.drinking_off);
                 }
             }
+        });
 
+        // 초기 상태 설정
+        boolean isDrinking = toggleButton.isChecked();
+        if (isDrinking) {
+            drinkingText.setText(R.string.drinking_on);
+        } else {
+            drinkingText.setText(R.string.drinking_off);
+        }
+
+        // 레코드 버튼 클릭 리스너
+        recordButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onAccuracyChanged(Sensor sensor, int accuracy) {
-            }
-        };
-
-        recordTask = new Runnable() {
-            @Override
-            public void run() {
-                recordSensorData();
-                handler.postDelayed(this, 5 * 60 * 1000); // 5분마다 실행
-            }
-        };
-
-        recordToggle.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked) {
-                statusTextView.setText("기록 중");
-                startRecording();
-            } else {
-                statusTextView.setText("기록 중지");
-                stopRecording();
+            public void onClick(View v) {
+                if (!isRecording) {
+                    // 서비스 시작
+                    serviceIntent = new Intent(RecordActivity.this, RecordService.class);
+                    startService(serviceIntent);
+                    isRecording = true;
+                    recordButton.setText(R.string.btn_stop_text);
+                    statusText.setText(R.string.status_on);
+                } else {
+                    // 서비스 종료
+                    stopService(serviceIntent);
+                    isRecording = false;
+                    recordButton.setText(R.string.btn_start_text);
+                    statusText.setText(R.string.status_off);
+                }
             }
         });
 
-        mainPageButton = findViewById(R.id.main_page_button);
-
-        mainPageButton.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-        });
+        // 초기 상태 설정
+        if (isRecording) {
+            statusText.setText(R.string.status_on);
+        } else {
+            statusText.setText(R.string.status_off);
+        }
     }
 
-    private void startRecording() {
-        isRecording = true;
-        sensorManager.registerListener(sensorEventListener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-        sensorManager.registerListener(sensorEventListener, gyroscope, SensorManager.SENSOR_DELAY_NORMAL);
-        handler.post(recordTask);
-    }
-
-    private void stopRecording() {
-        isRecording = false;
-        sensorManager.unregisterListener(sensorEventListener);
-        handler.removeCallbacks(recordTask);
-    }
-
-    private void recordSensorData() {
-        long timestamp = System.currentTimeMillis();
-        try (FileWriter fileWriter = new FileWriter(getFilesDir() + "/sensor_data.csv", true);
-             PrintWriter printWriter = new PrintWriter(fileWriter)) {
-            printWriter.printf("%d,%f,%f,%f,%f,%f,%f\n", timestamp,
-                    accelerometerData[0], accelerometerData[1], accelerometerData[2],
-                    gyroscopeData[0], gyroscopeData[1], gyroscopeData[2]);
-        } catch (IOException e) {
-            e.printStackTrace();
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // 액티비티가 종료될 때 서비스도 함께 종료
+        if (isRecording) {
+            stopService(serviceIntent);
         }
     }
 }
