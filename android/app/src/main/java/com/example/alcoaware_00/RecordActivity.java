@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +19,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class RecordActivity extends AppCompatActivity {
-    private Button recordButton;
     private TextView statusTextView;
     private boolean isRecording = false;
     private Handler handler = new Handler();
@@ -38,8 +38,8 @@ public class RecordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
 
-        recordButton = findViewById(R.id.record_button);
         statusTextView = findViewById(R.id.status_text);
+        ToggleButton recordToggle = findViewById(R.id.toggle_button);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -68,14 +68,15 @@ public class RecordActivity extends AppCompatActivity {
             }
         };
 
-        recordButton.setOnClickListener(v -> {
-            if (isRecording) {
-                stopRecording();
-            } else {
+        recordToggle.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                statusTextView.setText("기록 중");
                 startRecording();
+            } else {
+                statusTextView.setText("기록 중지");
+                stopRecording();
             }
         });
-
 
         mainPageButton = findViewById(R.id.main_page_button);
 
@@ -87,8 +88,6 @@ public class RecordActivity extends AppCompatActivity {
 
     private void startRecording() {
         isRecording = true;
-        statusTextView.setText("기록중");
-        recordButton.setText("Stop");
         sensorManager.registerListener(sensorEventListener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         sensorManager.registerListener(sensorEventListener, gyroscope, SensorManager.SENSOR_DELAY_NORMAL);
         handler.post(recordTask);
@@ -96,8 +95,6 @@ public class RecordActivity extends AppCompatActivity {
 
     private void stopRecording() {
         isRecording = false;
-        statusTextView.setText("기록되고 있지 않습니다");
-        recordButton.setText("Start");
         sensorManager.unregisterListener(sensorEventListener);
         handler.removeCallbacks(recordTask);
     }
