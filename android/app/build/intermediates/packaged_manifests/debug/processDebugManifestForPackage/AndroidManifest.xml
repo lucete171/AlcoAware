@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
-    <!-- WAKE_LOCK 권한 추가 -->
+    <!-- 권한 추가 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -29,7 +29,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.AppCompat.Light" >
+        android:theme="@style/Theme.AppCompat.Light"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.example.alcoaware_00.BaseActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.alcoaware_00.SplashActivity"
             android:exported="true"
@@ -43,6 +47,7 @@
         <activity android:name="com.example.alcoaware_00.LoginActivity" />
         <activity android:name="com.example.alcoaware_00.SignUpActivity" />
         <activity android:name="com.example.alcoaware_00.UserInfoActivity" />
+        <activity android:name="com.example.alcoaware_00.AddressSearchActivity" />
         <activity android:name="com.example.alcoaware_00.MainActivity" />
         <activity android:name="com.example.alcoaware_00.RecordActivity" />
         <activity

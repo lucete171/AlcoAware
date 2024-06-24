@@ -18,7 +18,6 @@
     <string name="age">출생년도</string>
     <string name="age_ex">예) 1998</string>
     <string name="region_hint">거주 지역</string>
-    <string name="region_ex">예) 서울특별시 양천구 목4동(~시 ~구 ~동/가)</string>
     <string name="submit_text">제출</string>
 
     <!--main-->

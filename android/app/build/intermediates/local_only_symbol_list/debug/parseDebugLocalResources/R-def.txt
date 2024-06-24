@@ -47,6 +47,8 @@ id splash_image
 id status_text
 id submit_button
 id text_selected_date
+id webView
+layout activity_address_search
 layout activity_login
 layout activity_main
 layout activity_record
@@ -76,7 +78,6 @@ string name_ex
 string password
 string project_id
 string record_btn_text
-string region_ex
 string region_hint
 string selected_date
 string sign_up

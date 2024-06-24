@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:padding="16dp">
+    android:padding="16dp"
+    >
 
     <LinearLayout
         android:id="@+id/form_container"
@@ -23,7 +24,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="60dp"
             android:layout_marginBottom="40dp"
-            android:onClick="hideKeyboard"/>
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -57,11 +58,6 @@
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/region_ex"/>
 
         <EditText
             android:id="@+id/region"

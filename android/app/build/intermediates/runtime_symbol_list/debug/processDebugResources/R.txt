@@ -3644,6 +3644,7 @@ int id view_tree_saved_state_registry_owner 0x7f09020e
 int id view_tree_view_model_store_owner 0x7f09020f
 int id visible 0x7f090210
 int id visible_removing_fragment_view_tag 0x7f090211
+int id webView 0x7f090220
 int id west 0x7f090212
 int id wide 0x7f090213
 int id withText 0x7f090214
@@ -3770,6 +3771,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_address_search 0x7f0c0076
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_record 0x7f0c001e
@@ -4117,7 +4119,6 @@ int string project_id 0x7f1100f9
 int string range_end 0x7f1100fa
 int string range_start 0x7f1100fb
 int string record_btn_text 0x7f1100fc
-int string region_ex 0x7f110122
 int string region_hint 0x7f1100fd
 int string search_bar_search 0x7f1100fe
 int string search_menu_title 0x7f1100ff
