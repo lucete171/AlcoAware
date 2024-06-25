@@ -15,7 +15,11 @@
         android:layout_marginTop="32dp"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_green_light"/>
+        android:textColor="@android:color/holo_green_light"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
 
     <!-- 토글 버튼과 메시지를 포함하는 레이아웃 -->
     <LinearLayout
@@ -34,7 +38,7 @@
             android:textOn="@string/on"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@layout/rounded_button"
+            android:background="@layout/rounded_button_gray"
             android:layout_marginEnd="16dp"
             />
         <!-- 음주 상태 메시지 -->
@@ -57,7 +61,7 @@
         android:layout_centerHorizontal="true"
         android:background="@layout/rounded_button"
         android:textSize="70sp"
-        android:textColor="@android:color/holo_green_light"
+        android:textColor="@color/button_text_color_green"
         android:layout_marginTop="30dp"/>
 
     <!-- 상태 텍스트 -->

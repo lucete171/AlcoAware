@@ -4,12 +4,14 @@ array drink_frequency_options
 array drink_location_options
 array gender_options
 color black
+color button_text_color_green
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color purple_200
 color purple_500
 color purple_700
+color red
 color teal_200
 color teal_700
 color white
@@ -20,6 +22,7 @@ drawable ic_launcher_foreground
 drawable splash_img
 id age
 id appTitle
+id app_name
 id buttonContainer
 id button_Login
 id button_SignUp
@@ -29,6 +32,8 @@ id confirm_password_toggle
 id confirm_pwd_section
 id drink_frequency
 id drink_location
+id drinking_status
+id drinking_text
 id email
 id form_container
 id gender
@@ -47,6 +52,7 @@ id splash_image
 id status_text
 id submit_button
 id text_selected_date
+id toggle_button
 id webView
 layout activity_address_search
 layout activity_login
@@ -58,13 +64,18 @@ layout activity_user_account
 layout activity_user_info
 layout edittext_rounded
 layout rounded_button
+layout rounded_button_gray
+layout rounded_button_red
 mipmap ic_launcher
 mipmap ic_launcher_round
 string age
 string age_ex
 string app_name
 string btn_start_text
+string btn_stop_text
 string confirm_pw
+string drinking_off
+string drinking_on
 string email
 string gcm_defaultSenderId
 string google_api_key
@@ -75,6 +86,8 @@ string login
 string main_page
 string name
 string name_ex
+string off
+string on
 string password
 string project_id
 string record_btn_text

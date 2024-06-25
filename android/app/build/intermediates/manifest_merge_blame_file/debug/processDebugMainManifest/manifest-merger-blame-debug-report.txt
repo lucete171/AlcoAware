@@ -8,368 +8,389 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10    <!-- 권한 추가 -->
-11    <uses-permission android:name="android.permission.WAKE_LOCK" />
-11-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:5:5-68
-11-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:5:22-65
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:6:5-67
-12-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:6:22-64
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
-13-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
-14    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-14-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\d8721d39a2f1893cf43c9d6cab232d92\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-14-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\d8721d39a2f1893cf43c9d6cab232d92\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
-15
-16    <permission
-16-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-17        android:name="com.example.alcoaware_00.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-17-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-18        android:protectionLevel="signature" />
-18-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-19
-20    <uses-permission android:name="com.example.alcoaware_00.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-20-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-20-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-21
-22    <application
-22-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:8:5-35:19
-23        android:allowBackup="true"
-23-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:9:9-35
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\b71816091ad3e09cf3c37f224933fde0\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-25        android:debuggable="true"
-26        android:extractNativeLibs="false"
-27        android:icon="@drawable/ic_launcher"
-27-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:9-45
-28        android:label="@string/app_name"
-28-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:11:9-41
-29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:12:9-54
-30        android:supportsRtl="true"
-30-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:13:9-35
-31        android:testOnly="true"
-32        android:theme="@style/Theme.AppCompat.Light"
-32-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:14:9-53
-33        android:usesCleartextTraffic="true" >
-33-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:15:9-44
-34        <activity
-34-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:16:9-18:40
-35            android:name="com.example.alcoaware_00.BaseActivity"
-35-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:17:13-41
-36            android:exported="false" />
-36-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:18:13-37
-37        <activity
-37-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:19:9-28:20
-38            android:name="com.example.alcoaware_00.SplashActivity"
-38-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:20:13-43
-39            android:exported="true"
-39-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:21:13-36
-40            android:theme="@style/Theme.AppCompat" >
-40-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:22:13-51
-41            <intent-filter>
-41-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:23:13-27:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:24:17-69
-42-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:24:25-66
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:6:5-68
+12-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:6:22-65
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+15-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\c931a31e91437e52bf70e4a420bd2e71\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+15-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\c931a31e91437e52bf70e4a420bd2e71\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+16
+17    <permission
+17-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.example.alcoaware_00.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.example.alcoaware_00.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:5-42:19
+24        android:allowBackup="true"
+24-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.1] C:\Users\amate\.gradle\caches\transforms-4\e07f74a9039d48bc37775538d2ecf58a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@drawable/ic_launcher"
+28-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:12:9-45
+29        android:label="@string/app_name"
+29-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:13:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:15:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.AppCompat.Light"
+33-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:16:9-53
+34        android:usesCleartextTraffic="true" >
+34-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:17:9-44
+35        <activity
+35-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:18:9-20:40
+36            android:name="com.example.alcoaware_00.RecordActivity"
+36-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:19:13-43
+37            android:exported="false" />
+37-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:20:13-37
+38
+39        <service
+39-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:22:9-25:39
+40            android:name="com.example.alcoaware_00.RecordService"
+40-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:23:13-42
+41            android:enabled="true"
+41-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:24:13-35
+42            android:exported="true" />
+42-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:25:13-36
 43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:26:17-77
-44-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:26:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity android:name="com.example.alcoaware_00.LoginActivity" />
-47-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:29:9-51
-47-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:29:19-48
-48        <activity android:name="com.example.alcoaware_00.SignUpActivity" />
-48-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:30:9-52
-48-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:30:19-49
-49        <activity android:name="com.example.alcoaware_00.UserInfoActivity" />
-49-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:31:9-54
-49-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:31:19-51
-50        <activity android:name="com.example.alcoaware_00.AddressSearchActivity" />
-50-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:9-59
-50-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:19-56
-51        <activity android:name="com.example.alcoaware_00.MainActivity" />
-51-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:33:9-50
-51-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:33:19-47
-52        <activity android:name="com.example.alcoaware_00.RecordActivity" />
-52-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:9-52
-52-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:19-49
-53        <activity
-53-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
-54            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-54-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
-55            android:excludeFromRecents="true"
-55-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
-56            android:exported="true"
-56-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
-57            android:launchMode="singleTask"
-57-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
-58            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-58-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
-59            <intent-filter>
-59-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
-60                <action android:name="android.intent.action.VIEW" />
-60-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-60-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-61
-62                <category android:name="android.intent.category.DEFAULT" />
-62-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-62-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-63                <category android:name="android.intent.category.BROWSABLE" />
-63-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-63-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-64
-65                <data
-65-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-66                    android:host="firebase.auth"
-66-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-67                    android:path="/"
-67-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-68                    android:scheme="genericidp" />
-68-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-69            </intent-filter>
-70        </activity>
-71        <activity
-71-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
-72            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-72-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
-73            android:excludeFromRecents="true"
-73-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
-74            android:exported="true"
-74-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
-75            android:launchMode="singleTask"
-75-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
-76            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-76-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
-77            <intent-filter>
-77-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
-78                <action android:name="android.intent.action.VIEW" />
-78-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-78-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-79
-80                <category android:name="android.intent.category.DEFAULT" />
-80-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-80-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-81                <category android:name="android.intent.category.BROWSABLE" />
-81-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-81-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-82
-83                <data
-83-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-84                    android:host="firebase.auth"
-84-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-85                    android:path="/"
-85-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-86                    android:scheme="recaptcha" />
-86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-87            </intent-filter>
-88        </activity>
-89
-90        <service
-90-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
-91            android:name="com.google.firebase.components.ComponentDiscoveryService"
-91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
-92            android:directBootAware="true"
-92-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-93            android:exported="false" >
-93-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
-94            <meta-data
-94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
-95                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
-96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\9a8288bd1dc5c4f4a1647b7d6baff34c\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
-97            <meta-data
-97-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
-98                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-98-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
-99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+44        <activity
+44-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:27:9-36:20
+45            android:name="com.example.alcoaware_00.SplashActivity"
+45-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:28:13-43
+46            android:exported="true"
+46-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:29:13-36
+47            android:theme="@style/Theme.AppCompat" >
+47-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:30:13-51
+48            <intent-filter>
+48-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:31:13-35:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:17-69
+49-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:17-77
+51-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity android:name="com.example.alcoaware_00.LoginActivity" />
+54-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:9-51
+54-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:19-48
+55        <activity android:name="com.example.alcoaware_00.SignUpActivity" />
+55-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:38:9-52
+55-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:38:19-49
+56        <activity android:name="com.example.alcoaware_00.UserInfoActivity" />
+56-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:39:9-54
+56-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:39:19-51
+57        <activity android:name="com.example.alcoaware_00.AddressSearchActivity" />
+57-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:9-59
+57-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:19-56
+58        <activity android:name="com.example.alcoaware_00.MainActivity" />
+58-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:9-50
+58-->C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:19-47
+59        <activity
+59-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+60            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+60-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+61            android:excludeFromRecents="true"
+61-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+62            android:exported="true"
+62-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+63            android:launchMode="singleTask"
+63-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+64-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+65            <intent-filter>
+65-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+66                <action android:name="android.intent.action.VIEW" />
+66-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+66-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+67
+68                <category android:name="android.intent.category.DEFAULT" />
+68-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+68-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+69                <category android:name="android.intent.category.BROWSABLE" />
+69-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+69-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+70
+71                <data
+71-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+72                    android:host="firebase.auth"
+72-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+73                    android:path="/"
+73-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+74                    android:scheme="genericidp" />
+74-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+75            </intent-filter>
+76        </activity>
+77        <activity
+77-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+78            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+78-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+79            android:excludeFromRecents="true"
+79-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+80            android:exported="true"
+80-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+81            android:launchMode="singleTask"
+81-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+82-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+83            <intent-filter>
+83-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+84                <action android:name="android.intent.action.VIEW" />
+84-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+84-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+85
+86                <category android:name="android.intent.category.DEFAULT" />
+86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+87                <category android:name="android.intent.category.BROWSABLE" />
+87-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+87-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+88
+89                <data
+89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+90                    android:host="firebase.auth"
+90-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+91                    android:path="/"
+91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+92                    android:scheme="recaptcha" />
+92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+93            </intent-filter>
+94        </activity>
+95
+96        <service
+96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
 100            <meta-data
-100-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
-101                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-101-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+100-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
 102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\54b4acc58326de5a80495252d7a5f507\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
 103            <meta-data
-103-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b7f032367c74dda809cf06c8574115ea\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-104                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-104-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b7f032367c74dda809cf06c8574115ea\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+103-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+104                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+104-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
 105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b7f032367c74dda809cf06c8574115ea\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+105-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
 106            <meta-data
-106-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-107                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-107-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+106-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+107                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+107-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
 108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-109        </service>
-110
-111        <activity
-111-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\4229d996ac7afffd84651a1922700d30\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
-112            android:name="androidx.compose.ui.tooling.PreviewActivity"
-112-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\4229d996ac7afffd84651a1922700d30\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
-113            android:exported="true" />
-113-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\4229d996ac7afffd84651a1922700d30\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
-114        <activity
-114-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\116c1fdfb614dd492f715b2e1a1fa048\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:23:9-25:39
-115            android:name="androidx.activity.ComponentActivity"
-115-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\116c1fdfb614dd492f715b2e1a1fa048\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:24:13-63
-116            android:exported="true" />
-116-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\116c1fdfb614dd492f715b2e1a1fa048\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:25:13-36
-117
-118        <service
-118-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
-119            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-119-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
-120            android:enabled="true"
-120-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
-121            android:exported="false" >
-121-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
-122            <meta-data
-122-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
-123                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-123-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
-124                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-124-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
-125        </service>
-126
-127        <activity
-127-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
-128            android:name="androidx.credentials.playservices.HiddenActivity"
-128-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
-129            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-129-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
-130            android:enabled="true"
-130-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
-131            android:exported="false"
-131-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
-132            android:fitsSystemWindows="true"
-132-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
-133            android:theme="@style/Theme.Hidden" >
-133-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\00ec65989dedf786741733054c32fdc2\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
-134        </activity>
-135        <activity
-135-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-136            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-136-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-137            android:excludeFromRecents="true"
-137-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-138            android:exported="false"
-138-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-139-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-140        <!--
-141            Service handling Google Sign-In user revocation. For apps that do not integrate with
-142            Google Sign-In, this service will never be started.
-143        -->
-144        <service
-144-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-145            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-145-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-146            android:exported="true"
-146-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-147            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-147-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-148            android:visibleToInstantApps="true" />
-148-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\3ec4bb3460ebf34245b40bde5e4b5771\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-149
-150        <provider
-150-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-151            android:name="com.google.firebase.provider.FirebaseInitProvider"
-151-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-152            android:authorities="com.example.alcoaware_00.firebaseinitprovider"
-152-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-153            android:directBootAware="true"
-153-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-154            android:exported="false"
-154-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-155            android:initOrder="100" />
-155-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\f563845a7f44c5e39c1b1c9d1779674d\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-156
-157        <activity
-157-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\amate\.gradle\caches\transforms-4\1b7ac5fbcd6695b8897ebbd8b66071e6\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-158            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-158-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\amate\.gradle\caches\transforms-4\1b7ac5fbcd6695b8897ebbd8b66071e6\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-159            android:exported="false"
-159-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\amate\.gradle\caches\transforms-4\1b7ac5fbcd6695b8897ebbd8b66071e6\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-160-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\amate\.gradle\caches\transforms-4\1b7ac5fbcd6695b8897ebbd8b66071e6\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+108-->[com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+110                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+110-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+113                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+113-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\079f496d3195949f8dcb803eae92e6cc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+116                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+116-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\079f496d3195949f8dcb803eae92e6cc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\079f496d3195949f8dcb803eae92e6cc\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+119                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+121        </service>
+122
+123        <activity
+123-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\ca6b7acd0986390e45ef9a3c2b141b00\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+124            android:name="androidx.compose.ui.tooling.PreviewActivity"
+124-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\ca6b7acd0986390e45ef9a3c2b141b00\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+125            android:exported="true" />
+125-->[androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\ca6b7acd0986390e45ef9a3c2b141b00\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+126        <activity
+126-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\a3b2076de8dc95367c4eaac514a0c90a\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:23:9-25:39
+127            android:name="androidx.activity.ComponentActivity"
+127-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\a3b2076de8dc95367c4eaac514a0c90a\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:24:13-63
+128            android:exported="true" />
+128-->[androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\amate\.gradle\caches\transforms-4\a3b2076de8dc95367c4eaac514a0c90a\transformed\jetified-ui-test-manifest-1.5.0\AndroidManifest.xml:25:13-36
+129
+130        <service
+130-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+131            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+131-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+132            android:enabled="true"
+132-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+133            android:exported="false" >
+133-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+134            <meta-data
+134-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+135                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+135-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+136                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+136-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+137        </service>
+138
+139        <activity
+139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+140            android:name="androidx.credentials.playservices.HiddenActivity"
+140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+141            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+142            android:enabled="true"
+142-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+143            android:exported="false"
+143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+144            android:fitsSystemWindows="true"
+144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+145            android:theme="@style/Theme.Hidden" >
+145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\amate\.gradle\caches\transforms-4\9360e6dc71935ea306f9868b25327020\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+146        </activity>
+147        <activity
+147-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+148            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+148-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+149            android:excludeFromRecents="true"
+149-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+151-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+152        <!--
+153            Service handling Google Sign-In user revocation. For apps that do not integrate with
+154            Google Sign-In, this service will never be started.
+155        -->
+156        <service
+156-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+157            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+157-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+158            android:exported="true"
+158-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+159            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+159-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+160            android:visibleToInstantApps="true" />
+160-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\amate\.gradle\caches\transforms-4\bc3e245ec37543a72d551a7ac9bfd0bc\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
 161
-162        <provider
-162-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
-163            android:name="androidx.startup.InitializationProvider"
-163-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:25:13-67
-164            android:authorities="com.example.alcoaware_00.androidx-startup"
-164-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:26:13-68
-165            android:exported="false" >
-165-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:27:13-37
-166            <meta-data
-166-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
-167                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-167-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:30:17-75
-168                android:value="androidx.startup" />
-168-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\7ea02352d1c40f58de3d183e8b9ac335\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:31:17-49
-169            <meta-data
-169-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\f5cd729bcff36069b5578d2a04a41ff6\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:29:13-31:52
-170                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-170-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\f5cd729bcff36069b5578d2a04a41ff6\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:30:17-78
-171                android:value="androidx.startup" />
-171-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\f5cd729bcff36069b5578d2a04a41ff6\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:31:17-49
-172            <meta-data
-172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-173                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-174                android:value="androidx.startup" />
-174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-175        </provider>
-176
-177        <meta-data
-177-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\amate\.gradle\caches\transforms-4\6a18aec6b7ced8fbdb47cbb4967e2a03\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-178            android:name="com.google.android.gms.version"
-178-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\amate\.gradle\caches\transforms-4\6a18aec6b7ced8fbdb47cbb4967e2a03\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-179            android:value="@integer/google_play_services_version" />
-179-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\amate\.gradle\caches\transforms-4\6a18aec6b7ced8fbdb47cbb4967e2a03\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-180
-181        <receiver
-181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-182            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-183            android:directBootAware="false"
-183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-184            android:enabled="true"
-184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-185            android:exported="true"
-185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-186            android:permission="android.permission.DUMP" >
-186-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-187            <intent-filter>
-187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-188                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-189            </intent-filter>
-190            <intent-filter>
-190-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-191                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-192            </intent-filter>
-193            <intent-filter>
-193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-194                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-195            </intent-filter>
-196            <intent-filter>
-196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-197                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\ab83588c78fbd5a711a66c3f4ef65ebc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-198            </intent-filter>
-199        </receiver>
-200    </application>
-201
-202</manifest>
+162        <activity
+162-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\amate\.gradle\caches\transforms-4\548052230fc900f0f051b18f648316e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+163            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+163-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\amate\.gradle\caches\transforms-4\548052230fc900f0f051b18f648316e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+164            android:exported="false"
+164-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\amate\.gradle\caches\transforms-4\548052230fc900f0f051b18f648316e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+165-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\amate\.gradle\caches\transforms-4\548052230fc900f0f051b18f648316e5\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+166
+167        <provider
+167-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+168            android:name="com.google.firebase.provider.FirebaseInitProvider"
+168-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+169            android:authorities="com.example.alcoaware_00.firebaseinitprovider"
+169-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+171            android:exported="false"
+171-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+172            android:initOrder="100" />
+172-->[com.google.firebase:firebase-common:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\508b574df8194d7290e5bcdd8c134b8a\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+173        <provider
+173-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+174            android:name="androidx.startup.InitializationProvider"
+174-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:25:13-67
+175            android:authorities="com.example.alcoaware_00.androidx-startup"
+175-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:26:13-68
+176            android:exported="false" >
+176-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:27:13-37
+177            <meta-data
+177-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+178                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+178-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:30:17-75
+179                android:value="androidx.startup" />
+179-->[androidx.emoji2:emoji2:1.4.0] C:\Users\amate\.gradle\caches\transforms-4\063e021d8af7a6a2e460f46e3cb1d5a1\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:31:17-49
+180            <meta-data
+180-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\791b93254af96c0b288fba8265be199b\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:29:13-31:52
+181                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+181-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\791b93254af96c0b288fba8265be199b\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:30:17-78
+182                android:value="androidx.startup" />
+182-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\amate\.gradle\caches\transforms-4\791b93254af96c0b288fba8265be199b\transformed\jetified-lifecycle-process-2.8.0\AndroidManifest.xml:31:17-49
+183            <meta-data
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+184                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+185                android:value="androidx.startup" />
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+186        </provider>
+187
+188        <meta-data
+188-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\4949f6e16e4fe4acadb34e25296c118c\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+189            android:name="com.google.android.gms.version"
+189-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\4949f6e16e4fe4acadb34e25296c118c\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+190            android:value="@integer/google_play_services_version" />
+190-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\amate\.gradle\caches\transforms-4\4949f6e16e4fe4acadb34e25296c118c\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+191
+192        <receiver
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+193            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+194            android:directBootAware="false"
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+195            android:enabled="true"
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+196            android:exported="true"
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+197            android:permission="android.permission.DUMP" >
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+199                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+200            </intent-filter>
+201            <intent-filter>
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+202                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+203            </intent-filter>
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+205                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+208                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\amate\.gradle\caches\transforms-4\45c24e1571e84b7be1645edb5851c4c0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+209            </intent-filter>
+210        </receiver>
+211    </application>
+212
+213</manifest>

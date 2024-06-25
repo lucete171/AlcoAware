@@ -4,7 +4,7 @@
             "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-64:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\481ba7378ac34359224eef46c2588847\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\ea819dd2f80f481cc895a6e254fda2b9\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\d12e89ceadf424bac583db6a4efd0478\\transformed\\material-1.10.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\3da50f9e22db076fb68baf0de46d9b37\\transformed\\material-1.10.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

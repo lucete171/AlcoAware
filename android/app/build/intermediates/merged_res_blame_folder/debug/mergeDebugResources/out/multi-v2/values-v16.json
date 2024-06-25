@@ -4,7 +4,7 @@
             "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-64:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\481ba7378ac34359224eef46c2588847\\transformed\\appcompat-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\ea819dd2f80f481cc895a6e254fda2b9\\transformed\\appcompat-1.7.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

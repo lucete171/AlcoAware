@@ -1375,6 +1375,7 @@ color browser_actions_text_color
 color browser_actions_title_color
 color button_material_dark
 color button_material_light
+color button_text_color_green
 color call_notification_answer_color
 color call_notification_decline_color
 color cardview_dark_background
@@ -2080,6 +2081,7 @@ color primary_text_disabled_material_light
 color purple_200
 color purple_500
 color purple_700
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3198,6 +3200,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id appTitle
+id app_name
 id arc
 id asConfigured
 id async
@@ -3300,6 +3303,8 @@ id dragStart
 id dragUp
 id drink_frequency
 id drink_location
+id drinking_status
+id drinking_text
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3620,6 +3625,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toggle_button
 id top
 id topPanel
 id touch_outside
@@ -3859,6 +3865,8 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout rounded_button
+layout rounded_button_gray
+layout rounded_button_red
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3912,6 +3920,7 @@ string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string btn_start_text
+string btn_stop_text
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -3980,6 +3989,8 @@ string date_range_picker_title
 string default_error_message
 string default_popup_window_title
 string dialog
+string drinking_off
+string drinking_on
 string dropdown_menu
 string email
 string error_a11y_label
