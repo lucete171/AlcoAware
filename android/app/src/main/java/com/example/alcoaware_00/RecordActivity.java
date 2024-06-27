@@ -100,10 +100,10 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
         toggleButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 drinkingText.setText(R.string.drinking_on);
-                toggleButton.setBackgroundResource(R.layout.rounded_button);
+                toggleButton.setBackgroundResource(R.drawable.rounded_button);
             } else {
                 drinkingText.setText(R.string.drinking_off);
-                toggleButton.setBackgroundResource(R.layout.rounded_button_gray);
+                toggleButton.setBackgroundResource(R.drawable.rounded_button_gray);
             }
         });
 
@@ -129,7 +129,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
     // 데이터 녹화 시작 메소드
     private void startRecording() {
         isRecording = true;
-        recordButton.setBackgroundResource(R.layout.rounded_button_red);
+        recordButton.setBackgroundResource(R.drawable.rounded_button_red);
         recordButton.setTextColor(ContextCompat.getColor(this, R.color.red));
         recordButton.setText(R.string.btn_stop_text); // 녹화 중지 버튼으로 텍스트 변경
         statusText.setText(R.string.status_on); // 상태 텍스트 변경
@@ -143,7 +143,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
             @Override
             public void run() {
                 sendDeviceData(); // 기기 데이터 전송 메소드 호출
-                handler.postDelayed(this, 10000); // 5분마다 데이터 전송
+                handler.postDelayed(this, 10000); // 10초마다 데이터 전송
             }
         };
         handler.post(dataSender); // 핸들러에 러너블 추가
@@ -152,7 +152,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
     // 데이터 녹화 중지 메소드
     private void stopRecording() {
         isRecording = false;
-        recordButton.setBackgroundResource(R.layout.rounded_button);
+        recordButton.setBackgroundResource(R.drawable.rounded_button);
         recordButton.setTextColor(ContextCompat.getColor(this, R.color.button_text_color_green));
         recordButton.setText(R.string.btn_start_text); // 녹화 시작 버튼으로 텍스트 변경
         statusText.setText(R.string.status_off); // 상태 텍스트 변경

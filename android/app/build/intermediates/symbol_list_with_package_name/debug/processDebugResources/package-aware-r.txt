@@ -3781,6 +3781,7 @@ layout abc_tooltip
 layout activity_address_search
 layout activity_login
 layout activity_main
+layout activity_predict
 layout activity_record
 layout activity_sign_up
 layout activity_splash

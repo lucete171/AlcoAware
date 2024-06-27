@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:2:1-47:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\amate\.gradle\caches\transforms-4\83b00e31665499c4cf1747d3a9c249fc\transformed\jetified-firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
@@ -143,8 +143,8 @@ MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\amate\.gradle\caches\transfor
 	android:name
 		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:5-42:19
-INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:5-42:19
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:5-45:19
+INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:10:5-45:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\amate\.gradle\caches\transforms-4\d69dedb8675363df3180112c327a4e22\transformed\jetified-firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\amate\.gradle\caches\transforms-4\b68e5ec53c11128a4887d7eab8a3342d\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:25:5-36:19
@@ -213,58 +213,64 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\am
 		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:16:9-53
 	android:usesCleartextTraffic
 		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:17:9-44
-activity#com.example.alcoaware_00.RecordActivity
+activity#com.example.alcoaware_00.PredictActivity
 ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:19:13-43
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:19:13-44
+activity#com.example.alcoaware_00.RecordActivity
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:21:9-23:40
+	android:exported
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:22:13-43
 service#com.example.alcoaware_00.RecordService
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:22:9-25:39
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:25:9-28:39
 	android:enabled
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:24:13-35
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:27:13-35
 	android:exported
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:25:13-36
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:28:13-36
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:23:13-42
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:26:13-42
 activity#com.example.alcoaware_00.SplashActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:27:9-36:20
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:30:9-39:20
 	android:exported
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:13-36
 	android:theme
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:30:13-51
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:33:13-51
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:28:13-43
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:31:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:27-74
 activity#com.example.alcoaware_00.LoginActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:9-51
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:9-51
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:37:19-48
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:19-48
 activity#com.example.alcoaware_00.SignUpActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:38:9-52
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:9-52
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:38:19-49
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:19-49
 activity#com.example.alcoaware_00.UserInfoActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:39:9-54
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:42:9-54
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:39:19-51
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:42:19-51
 activity#com.example.alcoaware_00.AddressSearchActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:9-59
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:43:9-59
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:40:19-56
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:43:19-56
 activity#com.example.alcoaware_00.MainActivity
-ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:9-50
+ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:44:9-50
 	android:name
-		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:41:19-47
+		ADDED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml:44:19-47
 uses-sdk
 INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\amate\GIT\AlcoAware\android\app\src\main\AndroidManifest.xml

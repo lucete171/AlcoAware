@@ -21,11 +21,9 @@
                 {
                     "source": "C:\\Users\\amate\\GIT\\AlcoAware\\android\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "-1,10,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,418,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endColumns": "-1,57,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "endOffsets": "-1,471,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "659,672,679,680,681,982,983,984,985,996,997,1000",
@@ -209,9 +207,12 @@
                 {
                     "source": "C:\\Users\\amate\\GIT\\AlcoAware\\android\\app\\src\\main\\res\\values\\arrays.xml",
                     "from": {
-                        "startLines": "-1,-1,-1",
-                        "startColumns": "-1,-1,-1",
-                        "startOffsets": "-1,-1,-1"
+                        "startLines": "7,-1,-1",
+                        "startColumns": "4,-1,-1",
+                        "startOffsets": "157,-1,-1",
+                        "endLines": "14,-1,-1",
+                        "endColumns": "19,-1,-1",
+                        "endOffsets": "399,-1,-1"
                     },
                     "to": {
                         "startLines": "2,10,16",

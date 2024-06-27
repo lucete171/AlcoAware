@@ -3780,6 +3780,7 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_address_search 0x7f0c001c
 int layout activity_login 0x7f0c001d
 int layout activity_main 0x7f0c001e
+int layout activity_predict 0x7f0c0079
 int layout activity_record 0x7f0c001f
 int layout activity_sign_up 0x7f0c0020
 int layout activity_splash 0x7f0c0021
