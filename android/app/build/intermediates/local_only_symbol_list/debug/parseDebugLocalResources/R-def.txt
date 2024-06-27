@@ -19,6 +19,9 @@ drawable ic_eye
 drawable ic_launcher
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable rounded_button
+drawable rounded_button_gray
+drawable rounded_button_red
 drawable splash_img
 id age
 id appTitle
@@ -64,9 +67,6 @@ layout activity_splash
 layout activity_user_account
 layout activity_user_info
 layout edittext_rounded
-layout rounded_button
-layout rounded_button_gray
-layout rounded_button_red
 mipmap ic_launcher
 mipmap ic_launcher_round
 string age

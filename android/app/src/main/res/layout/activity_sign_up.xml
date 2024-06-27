@@ -109,7 +109,7 @@
         android:layout_height="50dp"
         android:layout_below="@id/confirm_pwd_section"
         android:layout_centerHorizontal="true"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/rounded_button"
         android:textColor="@android:color/holo_green_light"
         android:textSize="20sp"
         android:gravity="center"

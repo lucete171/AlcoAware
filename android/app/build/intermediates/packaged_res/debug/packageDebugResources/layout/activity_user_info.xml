@@ -112,7 +112,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/rounded_button"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/form_container"
         android:gravity="center"

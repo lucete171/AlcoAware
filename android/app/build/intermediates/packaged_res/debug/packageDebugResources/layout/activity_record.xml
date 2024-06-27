@@ -38,7 +38,7 @@
             android:textOn="@string/on"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@layout/rounded_button_gray"
+            android:background="@drawable/rounded_button_gray"
             android:layout_marginEnd="16dp"
             />
         <!-- 음주 상태 메시지 -->
@@ -59,7 +59,7 @@
         android:layout_height="300dp"
         android:layout_below="@id/drinking_status"
         android:layout_centerHorizontal="true"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/rounded_button"
         android:textSize="70sp"
         android:textColor="@color/button_text_color_green"
         android:layout_marginTop="30dp"/>
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/rounded_button"
         android:textSize="16sp"
         android:textColor="@android:color/holo_green_light"
         android:layout_margin="16dp"

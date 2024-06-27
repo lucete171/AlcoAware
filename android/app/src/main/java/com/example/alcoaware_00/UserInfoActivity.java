@@ -181,7 +181,7 @@ public class UserInfoActivity extends AppCompatActivity {
 
         if (currentUser != null) {
             // Save to 'users' node under current user's UID
-            databaseRef.child("users").child(currentUser.getUid()).setValue(userInfo)
+            databaseRef.child("UserAccount").child(currentUser.getUid()).setValue(userInfo)
                     .addOnSuccessListener(aVoid -> {
                         Toast.makeText(this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(this, MainActivity.class);
