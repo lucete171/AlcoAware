@@ -3230,6 +3230,7 @@ id browser_actions_menu_view
 id buttonContainer
 id buttonPanel
 id button_Login
+id button_Logout
 id button_SignUp
 id cache_measures
 id calendar_view
@@ -4014,6 +4015,7 @@ string in_progress
 string indeterminate
 string item_view_role_description
 string login
+string logout
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

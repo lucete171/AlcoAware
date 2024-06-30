@@ -23,6 +23,7 @@
     <!--main-->
     <string name="selected_date">선택한 날짜</string>
     <string name="record_btn_text">기록 페이지 이동</string>
+    <string name="logout">로그아웃</string>
 
     <!--record-->
     <string name="btn_start_text">Start</string>

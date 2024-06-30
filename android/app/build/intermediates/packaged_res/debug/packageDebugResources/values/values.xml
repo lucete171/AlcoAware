@@ -46,6 +46,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_zsRQ2gG0U9zdgJS_9caZFf9ckAhKCRE</string>
     <string name="google_storage_bucket" translatable="false">alcoaware-cfbcb.appspot.com</string>
     <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
     <string name="main_page">메인 화면</string>
     <string name="name">이름</string>
     <string name="name_ex">예) 홍길동</string>

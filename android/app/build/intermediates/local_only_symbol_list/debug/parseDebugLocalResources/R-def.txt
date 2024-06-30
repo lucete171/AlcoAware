@@ -28,6 +28,7 @@ id appTitle
 id app_name
 id buttonContainer
 id button_Login
+id button_Logout
 id button_SignUp
 id calendar_view
 id confirm_password
@@ -84,6 +85,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string login
+string logout
 string main_page
 string name
 string name_ex

@@ -27,9 +27,22 @@
         android:layout_marginTop="16dp"/>
 
     <Button
+        android:id="@+id/button_Logout"
+        android:text="@string/logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:padding="12dp"/>
+    />
+
+    <Button
         android:id="@+id/record_page_button"
         android:text="@string/record_btn_text"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"

@@ -1,4 +1,4 @@
-#Thu Jun 27 22:25:45 KST 2024
+#Sun Jun 30 22:43:39 KST 2024
 base.0=C\:\\Users\\amate\\GIT\\AlcoAware\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\amate\\GIT\\AlcoAware\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\amate\\GIT\\AlcoAware\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex

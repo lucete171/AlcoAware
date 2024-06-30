@@ -20,6 +20,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class UserInfoActivity extends AppCompatActivity {
     private EditText nameEditText, ageEditText, regionEditText;
     private Spinner genderSpinner, drinkFrequencySpinner, drinkLocationSpinner;
@@ -172,16 +175,22 @@ public class UserInfoActivity extends AppCompatActivity {
         String drinkFrequency = drinkFrequencySpinner.getSelectedItem().toString();
         String drinkLocation = drinkLocationSpinner.getSelectedItem().toString();
 
-        // Create UserInfo object
-        UserAccount userInfo = new UserAccount(name, age, region, gender, drinkFrequency, drinkLocation);
-
         // Firebase Database reference
         DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
         if (currentUser != null) {
-            // Save to 'users' node under current user's UID
-            databaseRef.child("UserAccount").child(currentUser.getUid()).setValue(userInfo)
+            // Create a map to hold the updated user info
+            Map<String, Object> userInfoUpdates = new HashMap<>();
+            userInfoUpdates.put("name", name);
+            userInfoUpdates.put("age", age);
+            userInfoUpdates.put("region", region);
+            userInfoUpdates.put("gender", gender);
+            userInfoUpdates.put("drinkFrequency", drinkFrequency);
+            userInfoUpdates.put("drinkLocation", drinkLocation);
+
+            // Save updates to 'UserAccount' node under current user's UID
+            databaseRef.child("UserAccount").child(currentUser.getUid()).updateChildren(userInfoUpdates)
                     .addOnSuccessListener(aVoid -> {
                         Toast.makeText(this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(this, MainActivity.class);
@@ -193,4 +202,5 @@ public class UserInfoActivity extends AppCompatActivity {
                     });
         }
     }
+
 }

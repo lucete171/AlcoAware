@@ -14,6 +14,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
@@ -28,8 +29,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -119,7 +118,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
         // 메인 스레드의 핸들러 생성
         handler = new Handler(Looper.getMainLooper());
 
-        mainButton.setOnClickListener(v->{
+        mainButton.setOnClickListener(v -> {
             Intent intent = new Intent(RecordActivity.this, MainActivity.class);
             startActivity(intent);
         });
@@ -143,7 +142,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
             @Override
             public void run() {
                 sendDeviceData(); // 기기 데이터 전송 메소드 호출
-                handler.postDelayed(this, 10000); // 10초마다 데이터 전송
+                handler.postDelayed(this, 30000); // 30초마다 데이터 전송
             }
         };
         handler.post(dataSender); // 핸들러에 러너블 추가
@@ -190,32 +189,21 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
                 deviceData.put("gyr_z", gyrZ); // 자이로스코프 z 값 추가
                 deviceData.put("drinking", toggleButton.isChecked()); // 음주 여부 추가
 
-                // 사용자 정보 추가
-                if (uid != null) {
-                    DocumentReference userDoc = db.collection("users").document(uid); // 사용자 문서 참조
-                    userDoc.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                        @Override
-                        public void onSuccess(DocumentSnapshot documentSnapshot) {
-                            if (documentSnapshot.exists()) {
-                                // 사용자 정보 맵에 추가
-                                deviceData.put("name", documentSnapshot.getString("name"));
-                                deviceData.put("age", documentSnapshot.getString("age"));
-                                deviceData.put("address", documentSnapshot.getString("address"));
-                                deviceData.put("gender", documentSnapshot.getString("gender"));
-                                deviceData.put("drinking_frequency", documentSnapshot.getString("drinking_frequency"));
-                                deviceData.put("drinking_location", documentSnapshot.getString("drinking_location"));
+                // Firebase Database reference
+                DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
-                                // Firebase Realtime Database에 데이터 전송
-                                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("device_data").child(uid);
-                                databaseReference.push().setValue(deviceData);
-                            }
-                        }
-                    });
-                }
+                // 사용자 정보 추가
+                databaseRef.child("UserAccount").child(currentUser.getUid()).updateChildren(deviceData)
+                        .addOnSuccessListener(aVoid -> {
+                            Toast.makeText(RecordActivity.this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show(); // 수정된 부분
+                        })
+                        .addOnFailureListener(e -> {
+                            Toast.makeText(RecordActivity.this, "사용자 정보 저장 실패: " + e.getMessage(), Toast.LENGTH_SHORT).show(); // 수정된 부분
+                        });
             }
         });
     }
-
 
     @Override
     public void onSensorChanged(SensorEvent event) {

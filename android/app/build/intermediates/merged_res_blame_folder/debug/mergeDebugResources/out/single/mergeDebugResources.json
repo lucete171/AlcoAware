@@ -4,10 +4,6 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.alcoaware_00.app-debug-66:/layout_activity_record.xml.flat",
-        "source": "com.example.alcoaware_00.app-main-68:/layout/activity_record.xml"
-    },
-    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -22,10 +18,6 @@
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.alcoaware_00.app-debug-66:/layout_activity_user_info.xml.flat",
-        "source": "com.example.alcoaware_00.app-main-68:/layout/activity_user_info.xml"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -52,10 +44,6 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\activity_user_account.xml"
     },
     {
-        "merged": "com.example.alcoaware_00.app-debug-66:/layout_activity_sign_up.xml.flat",
-        "source": "com.example.alcoaware_00.app-main-68:/layout/activity_sign_up.xml"
-    },
-    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\activity_login.xml"
     },
@@ -72,12 +60,12 @@
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\layout_rounded_button_gray.xml.flat",
-        "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\rounded_button_gray.xml"
-    },
-    {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\layout_rounded_button_gray.xml.flat",
+        "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\rounded_button_gray.xml"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\drawable_rounded_button_gray.xml.flat",
@@ -114,10 +102,6 @@
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\layout_rounded_button.xml.flat",
         "source": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-main-68:\\layout\\rounded_button.xml"
-    },
-    {
-        "merged": "com.example.alcoaware_00.app-debug-66:/layout_activity_login.xml.flat",
-        "source": "com.example.alcoaware_00.app-main-68:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\amate\\.gradle\\daemon\\8.6\\com.example.alcoaware_00.app-debug-66:\\mipmap-xhdpi_ic_launcher.webp.flat",
