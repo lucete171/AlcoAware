@@ -196,6 +196,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
                 // 사용자 정보 추가
                 databaseRef.child("UserAccount").child(currentUser.getUid()).updateChildren(deviceData)
                         .addOnSuccessListener(aVoid -> {
+                            // 이후 문구 수정이나 삭제 
                             Toast.makeText(RecordActivity.this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show(); // 수정된 부분
                         })
                         .addOnFailureListener(e -> {

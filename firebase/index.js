@@ -2,7 +2,7 @@ const db = require('./firebase');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const fs = require('fs');
 
-const csvFilePath = 'data.csv';
+const csvFilePath = './data.csv';
 const lastTimestampFilePath = 'lastTimestamp.txt';
 
 // CSV Writer 설정
