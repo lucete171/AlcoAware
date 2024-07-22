@@ -33,6 +33,9 @@
         android:theme="@style/Theme.AppCompat.Light"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.alcoaware_00.ScoreActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.alcoaware_00.PredictActivity"
             android:exported="false" />
         <activity

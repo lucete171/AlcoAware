@@ -27,8 +27,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -189,18 +187,15 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
                 deviceData.put("gyr_z", gyrZ); // 자이로스코프 z 값 추가
                 deviceData.put("drinking", toggleButton.isChecked()); // 음주 여부 추가
 
-                // Firebase Database reference
-                DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
-                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-
-                // 사용자 정보 추가
-                databaseRef.child("UserAccount").child(currentUser.getUid()).updateChildren(deviceData)
+                // Firestore reference
+                db.collection("UserAccount").document(uid)
+                        .collection("DeviceData").add(deviceData)
                         .addOnSuccessListener(aVoid -> {
-                            // 이후 문구 수정이나 삭제 
-                            Toast.makeText(RecordActivity.this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show(); // 수정된 부분
+                            // 이후 문구 수정이나 삭제
+                            Toast.makeText(RecordActivity.this, "사용자 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show();
                         })
                         .addOnFailureListener(e -> {
-                            Toast.makeText(RecordActivity.this, "사용자 정보 저장 실패: " + e.getMessage(), Toast.LENGTH_SHORT).show(); // 수정된 부분
+                            Toast.makeText(RecordActivity.this, "사용자 정보 저장 실패: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         });
             }
         });
