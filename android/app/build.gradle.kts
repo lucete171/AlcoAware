@@ -30,19 +30,24 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -51,7 +56,23 @@ android {
 }
 
 dependencies {
+    // WorkManager 종속성 직접 추가
+    implementation("androidx.work:work-runtime:2.8.1")
 
+    // Guava 라이브러리 추가
+    implementation("com.google.guava:guava:31.1-android")
+
+    // Firebase 종속성
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
+
+    // 카카오 SDK 종속성
+    implementation("com.kakao.sdk:v2-core:2.8.0")
+    implementation("com.kakao.sdk:v2-user:2.8.0")
+    implementation("com.kakao.sdk:v2-location:2.8.0")
+
+    // 나머지 종속성들
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,13 +82,11 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
-    implementation(libs.firebase.auth)
-    implementation(libs.firebase.database)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.location)
-    implementation(libs.firebase.firestore)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

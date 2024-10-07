@@ -102,8 +102,10 @@ string sign_up_prompt
 string status_off
 string status_on
 string submit_text
+string title_activity_record_worker
 string user_info_text
 string welcome_message
+style AppStyle
 style AppTheme
 xml backup_rules
 xml data_extraction_rules

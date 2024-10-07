@@ -35,5 +35,6 @@
     <string name="drinking_off">음주 중이 아닙니다</string>
     <string name="off">Off</string>
     <string name="on">On</string>
+    <string name="title_activity_record_worker">RecordWorker</string>
 
 </resources>

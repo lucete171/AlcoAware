@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-64:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.example.alcoaware_00.app-mergeDebugResources-69:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\ea819dd2f80f481cc895a6e254fda2b9\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\amate\\.gradle\\caches\\transforms-4\\cf87c0d0fb7322fcc976b72e857c8a07\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

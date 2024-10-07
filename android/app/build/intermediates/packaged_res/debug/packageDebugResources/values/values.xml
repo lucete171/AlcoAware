@@ -63,12 +63,11 @@
     <string name="status_off">기록되고 있지 않습니다</string>
     <string name="status_on">기록 중...</string>
     <string name="submit_text">제출</string>
+    <string name="title_activity_record_worker">RecordWorker</string>
     <string name="user_info_text">사용자 정보</string>
     <string name="welcome_message">Welcome to AlcoAware!</string>
+    <style name="AppStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
     </style>
 </resources>
