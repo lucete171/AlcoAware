@@ -37,6 +37,7 @@ public class RecordActivity extends AppCompatActivity implements SensorEventList
     private Button recordButton; // 녹화 버튼
     private TextView statusText; // 녹화 상태 텍스트 뷰
     private Button mainButton; // 메인 페이지로 이동하는 버튼
+    private Button detectButton; // 음주 여부를 확인하는 버튼
 
     // 녹화 상태 변수
     private boolean isRecording = false; // 녹화 상태를 나타내는 변수
